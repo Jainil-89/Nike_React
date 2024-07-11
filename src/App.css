@@ -1,0 +1,101 @@
+
+#bar{
+    display: none;
+}
+body{
+    background-color: #18181B;
+}
+.box h1{
+    font-family: 'oswald';
+}
+.mrp h1{
+    font-family: 'oswald';
+}
+.air h1{
+    font-family: 'oswald';
+}
+
+@media screen and (max-width:1145px){
+    /* .box{
+        flex-direction: column;
+    } */
+    .shu{
+        width: 40%;
+        height: auto;
+    }
+    .jdt h1{
+        font-size: 36px;
+    }
+    .mrp h1{
+        /* width: 60%; */
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .shu{
+        width: 40%;
+        height: 30%;
+        margin-left: -20%;
+    }
+}
+@media screen and (max-width:970px){
+    .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .jdt h1{
+        margin-left: -90%;
+        font-size: 40px;
+        margin-top: -30%;
+
+    }
+    .box img{
+        margin-left: -14%;
+    }
+    .mrp{
+        padding-left: 3%;
+    }
+    .mrp h1{
+        width: 90%;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:772px) {
+    .nv li{
+        display: none;
+    }
+    .icn i{
+        display: none;
+    }
+    #bar{
+        display: block;
+        margin-right: -8%;
+    }
+}
+@media screen and (max-width:766px){
+    .box img{
+        width: 60%;
+        height: auto;
+    }
+    /* .box{
+        flex-direction: column;
+    } */
+    .jdt{
+        display: none;
+    }
+}
+
+@media screen and (max-width:462px){
+    nav img{
+        margin-left: 35%;
+    }
+    #bar{
+        display: block;
+        margin-right: 0%;
+    }
+    .air h1{
+        font-size: 32px;
+    }
+}
