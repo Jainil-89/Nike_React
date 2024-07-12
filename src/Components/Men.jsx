@@ -47,7 +47,7 @@ function Men() {
 
             <div className="vid overflow-hidden flex h-2/3 justify-center mt-40 ">
                 <div className="w-4/5">
-                    <video src="./src/assets/men.mp4" autoPlay loop></video>
+                    <video src="/men.mp4" autoPlay loop></video>
                 </div>
             </div>
 

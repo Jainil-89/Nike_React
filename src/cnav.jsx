@@ -24,7 +24,7 @@ function Cnav(){
     return(
         <>
             <div className="cnav flex justify-center">
-                <img className='w-28 h-auto mr-6 fill-white-900' src="./src/assets/nike(1).png" alt="" />
+                <img className='w-28 h-auto mr-6 fill-white-900' src="/nike(1).png" alt="" />
             </div>
                 <Link className="lnk overflow-hidden absolute right-10 sm:text-xl -mt-20 text-white" to="/">Home</Link>
         </>
