@@ -86,7 +86,7 @@ function App() {
       <div className="n flex justify-center w-full bg-zinc-950 absolute z-50 hidden">
         <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-16 pt-10 text-white cursor-pointer"></i>
         <ul className='text-xl text-white mt-24 p-10 sm:text-xl'>
-          <li className='p-8'><a to="/">Men</a></li>
+          <li className='p-8'><Link to="/Men">Men</Link></li>
           <li className='p-8 pl-3'><a href="">Women</a></li>
           <li className='p-8'><a href="">Kids</a></li>
           <li className='p-8'><a href="">Sale</a></li>
