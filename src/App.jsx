@@ -155,6 +155,8 @@ function App() {
             <Card img="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_410,c_limit/f02453d3-7589-4c91-b86c-6f2262153eac/mercurial-superfly-10-elite-blueprint-fg-high-top-football-boot-bw1xLJ.png" name="Nike Mercurial Superfly 10 Elite" mrp="23795" />
             <Card img="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b99c1521-3566-47dc-bd39-17a37b62602c/gt-hustle-3-blueprint-ep-basketball-shoes-gLwVc4.png" name="Nike G.T. Hustle 3" mrp="17495" />
 
+          </div>
+          <div className='flex justify-center'>
             <Link to="/Men"><button className='w-48 h-14 text-white rounded-xl text-xl bg-zinc-800 mb-10 mt-20 hover:text-white hover:bg-black hover:ease-out duration-300'>Explore More</button></Link>
           </div>
 
