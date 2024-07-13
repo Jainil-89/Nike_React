@@ -1,6 +1,8 @@
+import React from "react"
+
 function Shoes(){
     return(
-        <h1>hello</h1>
+        <h1>Hii</h1>
     )
 }
 
