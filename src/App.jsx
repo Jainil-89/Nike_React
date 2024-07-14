@@ -101,7 +101,7 @@ function App() {
         <nav className='w-full h-20 flex justify-evenly bg-zinc-900 text-white'>
           <img className='w-24 h-auto mr-16 fill-white-900' src="/nike(1).png" alt="" />
           <ul className='nv h-auto flex max-[890px]:hidden'>
-            <li className='m-6 text-lg'><Link to="/Men">Men</Link></li>
+            <li className='m-6 text-lg'><a href="/Men">Men</a></li>
             <li className='m-6 text-lg'><a href="">Women</a></li>
             <li className='m-6 text-lg'><a href="">Kids</a></li>
             <li className='m-6 text-lg'><a href="">Sale</a></li>

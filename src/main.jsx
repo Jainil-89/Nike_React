@@ -6,6 +6,8 @@ import Men from './Components/Men.jsx'
 import Detail from './Components/Detail.jsx'
 import Shoes from './Components/Shoes.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import Clothing from './Components/Clothing.jsx'
+import ClothingDetail from './Components/ClothingDetail.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,15 @@ const router = createBrowserRouter([
     path:'/Shoes/Detail/:id',
     element:<Detail  />
   },
+  {
+    path:'Men/clothing/',
+    element:<Clothing  />
+  },
+  {
+    path:'/clothing/Detail/:id',
+    element:<ClothingDetail  />
+  },
+  
 ])
 
 

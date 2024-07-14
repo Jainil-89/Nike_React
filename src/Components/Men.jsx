@@ -59,7 +59,7 @@ function Men() {
                         <Link to="/Men/Shoes">Shoes</Link>
                     </li>
                     <li className="p-5 mnl">
-                        <Link to="">Clothing</Link>
+                        <Link to="/Men/clothing">Clothing</Link>
                     </li>
                     <li className="p-5 mnl">
                         <Link to="">Gear</Link>
