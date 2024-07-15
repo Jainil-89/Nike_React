@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Cloth from "../Products/cloths";
 import { useParams } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
+import { Footer } from "../Footer";
 
 
 function ClothingDetail(){
@@ -12,7 +13,7 @@ function ClothingDetail(){
 
     function inc(){
         if(qty>=15){
-            a.innerText = "Max Limit"
+            setQty(15)
         }
         else
         setQty(qty+1)
@@ -20,7 +21,8 @@ function ClothingDetail(){
     
     function dec(){
         if(qty<=0){
-            a.innerText = "Oops !"
+            // a.innerText = "Oops !"
+            setQty(0)
         }
         else
         setQty(qty-1)
@@ -43,7 +45,7 @@ function ClothingDetail(){
                     <h1 className="text-white max-[711px]:text-lg text-4xl m-7 font-semibold">{x.name}</h1>
                     <h1 className="text-white text-2xl m-9 max-[711px]:text-lg font-mono">{x.mrp}</h1>
                     <div className="mt-9 text-white px-6">
-                    <button className="pr-10 text-xl">-</button><span className="px-5 text-xl">Qty : {qty}</span><button onClick={inc} className="pl-5 text-xl">+</button>
+                    <button onClick={dec} className="pr-10 text-xl">-</button><span className="px-5 text-xl">Qty : {qty}</span><button onClick={inc} className="pl-5 text-xl">+</button>
                     </div>
                     <h1 className="text-white text-xl mb-6 mt-14 max-[431px]:ml-2 ml-7 font-bold">Select Size</h1>
 
@@ -63,6 +65,7 @@ function ClothingDetail(){
             </div>
             )
         })}
+        <Footer />
         </>
     )
 }

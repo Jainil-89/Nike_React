@@ -5,7 +5,7 @@ function Card({img,name,mrp}){
 
         <>
             
-                <div className="b hover:scale-95 duration-500 w-44 sm:w-80 mt-16 h-auto">
+                <div className="b hover:scale-95 duration-500 w-72 max-[460px]:w-40 mt-16 h-auto">
                     <div className="img w-full h-auto">
                         <img src={img} alt="" />
                     </div>

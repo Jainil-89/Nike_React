@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { useGSAP } from "@gsap/react"
 import gsap from 'gsap';
 import Shoes from "./Shoes";
+import { Footer } from "../Footer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
@@ -62,7 +63,7 @@ function Men() {
                         <Link to="/Men/clothing">Clothing</Link>
                     </li>
                     <li className="p-5 mnl">
-                        <Link to="">Gear</Link>
+                        <Link to="/Men/Gear">Gear</Link>
                     </li>
                 </ul>
             </div>
@@ -82,6 +83,7 @@ function Men() {
                 </div>
             </div>
 
+        <Footer />
 
         </>
     )

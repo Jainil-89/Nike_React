@@ -2,14 +2,14 @@ import React from "react";
 import Cnav from "../cnav";
 import { Link } from "react-router-dom";
 import Detail from "./Detail";
-import ProductList from "../Products/ProductList"
+import Cloth from "../Products/cloths";
 import { useGSAP } from "@gsap/react";
 import '../Shoes.css'
-import { Footer } from "../Footer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Footer } from "../Footer";
 
 
-function Shoes(){
+function Gear(){
 
 
 
@@ -18,9 +18,10 @@ function Shoes(){
             <Cnav />
             <div className="box mt-2 shadow-xl overflow-hidden w-full h-auto justify-evenly flex flex-wrap">
                 
-                {ProductList.map((x)=>{
+                {Cloth.map((x)=>{
+                    if(x.id > 24)
                     return(
-                       <Link to={`/Shoes/Detail/${x.id}`}>
+                       <Link to={`/Gear/Detail/${x.id}`}>
                         <div className="img-box hover:scale-110 duration-500 max-[630px]:ml-36 w-72 sm:w-72 h-auto mt-10">
                          <img className="opacity-80 hover:shadow-2xl hover:shadow-black" src={x.img} alt="" />
                          <h1 className="nme pt-10 text-white text-md max-[630px]:-ml-4 text-xl sm:text-center">{x.name}</h1>
@@ -36,4 +37,4 @@ function Shoes(){
 
 }
 
-export default Shoes
+export default Gear

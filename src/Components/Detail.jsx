@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductList from "../Products/ProductList";
 import { useParams } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
+import { Footer } from "../Footer";
 
 
 function Detail(){
@@ -12,7 +13,8 @@ function Detail(){
 
     function inc(){
         if(qty>=15){
-            a.innerText = "Max Limit"
+            // a.innerText = "Max Limit"
+            setQty(15)
         }
         else
         setQty(qty+1)
@@ -20,7 +22,8 @@ function Detail(){
     
     function dec(){
         if(qty<=0){
-            a.innerText = "Oops !"
+            // a.innerText = "Oops !"
+            setQty(0)
         }
         else
         setQty(qty-1)
@@ -64,6 +67,7 @@ function Detail(){
             </div>
             )
         })}
+        <Footer />
         </>
     )
 }

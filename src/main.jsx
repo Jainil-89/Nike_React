@@ -5,6 +5,7 @@ import './index.css'
 import Men from './Components/Men.jsx'
 import Detail from './Components/Detail.jsx'
 import Shoes from './Components/Shoes.jsx'
+import Gear from './Components/Gear.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Clothing from './Components/Clothing.jsx'
 import ClothingDetail from './Components/ClothingDetail.jsx'
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
   },
   {
     path:'/clothing/Detail/:id',
+    element:<ClothingDetail  />
+  },
+  {
+    path:'/Men/Gear',
+    element:<Gear  />
+  },
+  {
+    path:'/Gear/Detail/:id',
     element:<ClothingDetail  />
   },
   

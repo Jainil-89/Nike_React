@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 import Mrp from './mrp';
+import { Footer } from './Footer';
 import Men from './Components/Men';
 import './App.css'
 import { Link } from 'react-router-dom';
@@ -83,8 +84,8 @@ function App() {
   return (
     <>
 
-      <div className="n flex justify-center w-full bg-zinc-950 absolute z-50 hidden">
-        <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-16 pt-10 text-white cursor-pointer"></i>
+      <div className="n flex justify-center w-full fixed bg-zinc-950 absolute z-50 hidden">
+        <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-5 pt-6 text-white cursor-pointer"></i>
         <ul className='text-xl text-white mt-24 p-10 sm:text-xl'>
           <li className='p-8'><Link to="/Men">Men</Link></li>
           <li className='p-8 pl-3'><a href="">Women</a></li>
@@ -128,7 +129,9 @@ function App() {
 
             <div className="jdt w-auto flex text-justify mt-36 ml-36 h-full text-3xl text-white">
               <h1 className='text-7xl font-extrabold pt-10'>
+                <div className='jdit'>
                 Just <br />  Do <br /> It .
+                </div>
               </h1>
             </div>
 
@@ -157,12 +160,15 @@ function App() {
 
           </div>
           <div className='flex justify-center'>
-            <Link to="/Men"><button className='w-48 h-14 text-white rounded-xl text-xl bg-zinc-800 mb-10 mt-20 hover:text-white hover:bg-black hover:ease-out duration-300'>Explore More</button></Link>
+            <a href="/Men"><button className='w-48 h-14 text-white rounded-xl text-xl bg-zinc-800 mb-10 mt-20 hover:text-white hover:bg-black hover:ease-out duration-300'>Explore More</button></a>
           </div>
 
         </body>
 
       </div>
+      <footer>
+          <Footer />
+        </footer>
     </>
   )
 }

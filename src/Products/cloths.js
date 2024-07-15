@@ -23,6 +23,32 @@ const Cloth = [
     {id:22,name:'Dri-FIT Fleece Long-Sleeve',cat:'t-shirt',mrp:'MRP : ₹ 3 595.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0ee7de0-a7f6-433e-9dc5-d5a1526784ba/dri-fit-fleece-long-sleeve-fitness-crew-g2cPHl.png'},
     {id:23,name:'Nike Dri-FIT Standard Issue',cat:'t-shirt',mrp:'MRP : ₹ 5 495.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/61c5e48d-904e-4a2e-b689-4f62ebef4d46/dri-fit-standard-issue-pullover-basketball-hoodie-RJnLjp.png'},
     {id:24,name:'Zion',cat:'t-shirt',mrp:'MRP : ₹ 3 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/943422d4-d7d3-4b8d-8d48-fb8543e636d4/zion-graphic-fleece-pullover-hoodie-b0HHG8.png'},
+    {id:25,name:'Nike Club',mrp:'MRP : ₹ 1 595.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/88b18a70-7c33-4d59-936f-557123ed7265/club-unstructured-flat-bill-outdoor-cap-4cwg3N.png'},
+    {id:26,name:'Nike Apex',mrp:'MRP : ₹ 1 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2668e9b-a572-4cd7-8c36-01df6774b6b1/apex-bucket-hat-Qw5gdd.png'},
+    {id:27,name:'Nike Heritage',mrp:'MRP : ₹ 1 395.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/40cb33ba-b1fe-4336-bfbf-9a680865a695/heritage-waistpack-Fnc8kw.png'},
+    {id:28,name:'Nike Apex',mrp:'MRP : ₹ 1 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11cbd111-6efd-43ba-ab82-d4caaa6bf839/apex-reversible-bucket-hat-wpLGw1.png'},
+    {id:29,name:'Nike Rise',mrp:'MRP : ₹ 1 695.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dd953cf9-cc3e-4732-ad80-1fee5b8d3173/rise-structured-curved-bill-cap-rmkTbB.png'},
+    {id:30,name:'Jordan Apex',mrp:'MRP : ₹ 1 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1fb52db1-9e36-4107-822a-f380c50a43ce/jordan-apex-bucket-hat-lxJ3Hs.png'},
+    {id:31,name:'Nike Aura',mrp:'MRP : ₹ 1 895.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/146a66b9-5475-4d3e-9819-1c3acc5afa01/aura-cross-body-bag-KhhSpj.png'},
+    {id:32,name:'Nike Club',mrp:'MRP : ₹ 1 195.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/20c3cdb4-0e8b-4476-9a84-df0fec3f8f78/club-unstructured-swoosh-cap-c7lT9H.png'},
+    {id:33,name:'Nike Aura',mrp:'MRP : ₹ 1 895.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/78e110cc-2a9f-4e2e-9d17-4be1f5644148/aura-cross-body-bag-KhhSpj.png'},
+    {id:34,name:'Nike Heritage',mrp:'MRP : ₹ 3 795.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7ec3c3e1-51f8-4b54-8f61-656fd72e3f3c/heritage-winterized-eugene-backpack-j3gMBX.png'},
+    {id:35,name:'Nike Hoops Elite',mrp:'MRP : ₹ 5 295.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2af2bbf9-84c2-41ef-a449-f552453ccf85/hoops-elite-backpack-Nw6wcq.png'},
+    {id:36,name:'Nike Brasilia 9.5',mrp:'MRP : ₹ 2 295.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33958efa-dbd2-42d3-8f69-a3f09512978e/brasilia-9-5-training-duffel-bag-Bpwcdd.png'},
+    {id:37,name:'Nike Hike',mrp:'MRP : ₹ 6 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ec1d2ed7-bc81-49be-852d-c62141933acc/hike-duffel-bag-KZkHPv.png'},
+    {id:38,name:'Nike Utility Speed',mrp:'MRP : ₹ 4 495.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5765468e-9410-4192-b9bc-746ea32e0c00/utility-speed-training-backpack-mTh0wd.png'},
+    {id:39,name:'Nike Shoe Box Bag',mrp:'MRP : ₹ 2 295.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b874379a-f5fd-4f62-9153-af9b222939d5/shoe-box-bag-M9GftZ.png'},
+    {id:40,name:'Nike Hike',mrp:'MRP : ₹ 3 295.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21a80115-43a3-4296-8941-c7f6200ce586/hike-hip-pack-Bx8WrV.png'},
+    {id:41,name:'Nike Everyday Plus Cushioned',mrp:'MRP : ₹ 1095.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a40fc9f3-5dda-43de-9c1d-84adb14efc98/everyday-plus-cushioned-training-ankle-socks-svtZ85.png'},
+    {id:42,name:'Nike Everyday Plus Cushioned',mrp:'MRP : ₹ 495.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e19c9729-fdcf-40e6-b66f-004f9bf4d059/everyday-plus-cushioned-training-ankle-socks-h3Pq0p.png'},
+    {id:43,name:'Nike Utility Power',mrp:'MRP : ₹ 3 795.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/81189e14-81f5-4298-9357-179407bc4483/utility-power-training-duffel-bag-TJ6wFc.png'},
+    {id:44,name:'Nike Sportswear RPM',mrp:'MRP : ₹ 5 795.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/476842a9-f75a-4ea0-96c3-109b64c67a40/sportswear-rpm-backpack-vGq1rL.png'},
+    {id:45,name:'Nike Peak',mrp:'MRP : ₹ 1 595.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a532d2f5-344c-4d02-8667-e39e9d8a07ae/peak-tall-cuff-futura-beanie-X3mlw4.png'},
+    {id:46,name:'Jordan Rise',mrp:'MRP : ₹ 1 995.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0ffb8d09-fea9-4b29-9555-539a8ee5769c/jordan-rise-structured-hat-7K3BGs.png'},
+    {id:47,name:'Jordan Rise',mrp:'MRP : ₹ 1 695.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3bd5e9aa-d515-4b84-98a0-91931e761efa/jordan-rise-structured-hat-v99s8M.png'},
+    {id:48,name:'Nike Premium',mrp:'MRP : ₹ 2 295.00',img:'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/17d90a44-1b35-498a-9212-aceef13e353c/cross-body-bag-Bdx1hX.png'},
+
+
 ]
 
 export default Cloth

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Detail from "./Detail";
 import ProductList from "../Products/ProductList"
 import Cloth from "../Products/cloths"
-// import Cnav from "../cnav";
+import { Footer } from "../Footer";
 import '../Shoes.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -16,9 +16,10 @@ function Clothing(){
         <>
             <Cnav />
 
-            <div className="box mt-20 w-full h-auto justify-evenly flex flex-wrap">
+            <div className="box overflow-hidden mt-20 w-full h-auto justify-evenly flex flex-wrap">
                 
                 {Cloth.map((x)=>{
+                    if(x.id < 25)
                     return(
                        <Link to={`/clothing/Detail/${x.id}`}>
                         <div className="img-box hover:scale-110 duration-500 max-[630px]:ml-36 w-72 sm:w-72 h-auto mt-10">
@@ -30,6 +31,7 @@ function Clothing(){
                     )
                 })}
             </div>
+            <Footer />
         </>
     )
 

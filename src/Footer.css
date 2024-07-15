@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:475px) {
+    .cont{
+        flex-direction: column;
+    }
+    .logo{
+        margin-left: 35%;
+    }
+    .logo img{
+        margin-left: 10%;
+    }
+    .men,.women,.kid{
+        margin-top: 10%;
+    }
+}
