@@ -78,8 +78,8 @@ function Men() {
                 <h1 className="ml-10 mb-20 text-white sm:text-3xl">Featured</h1>
                 <div className="img-wrp flex text-2xl text-center text-white font-bold flex-wrap justify-evenly">
                     <div className="rj  w-64 hover:scale-110 duration-500 mb-16 h-auto p-10"><Link to="/Men/Shoes"><img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/a3babaed-553e-4f7e-a3fd-422df398ae29/men-s-shoes-clothing-accessories.jpg" alt="" /></Link>Shoes</div>
-                    <div className="rj  w-64 hover:scale-110 duration-500 mb-16 h-auto p-10 "><Link to="/Men/Shoes"><img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/589e4f98-1759-4bc2-9a7e-e029aa0c5336/men-s-shoes-clothing-accessories.png" alt="" /></Link>Clothing</div>
-                    <div className="rj  w-64 hover:scale-110 duration-500 mb-16 h-auto p-10 "><Link to="/Men/Shoes"><img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_512,c_limit/d7198555-f836-4202-a2aa-7f2f96b17205/men-s-shoes-clothing-accessories.jpg" alt="" /></Link>Gear</div>
+                    <div className="rj  w-64 hover:scale-110 duration-500 mb-16 h-auto p-10 "><Link to="/Men/Clothing"><img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/589e4f98-1759-4bc2-9a7e-e029aa0c5336/men-s-shoes-clothing-accessories.png" alt="" /></Link>Clothing</div>
+                    <div className="rj  w-64 hover:scale-110 duration-500 mb-16 h-auto p-10 "><Link to="/Men/Gear"><img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_512,c_limit/d7198555-f836-4202-a2aa-7f2f96b17205/men-s-shoes-clothing-accessories.jpg" alt="" /></Link>Gear</div>
                 </div>
             </div>
 

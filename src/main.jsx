@@ -2,6 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import KC from './Components/KC.jsx'
+import Kid from './Components/Kid.jsx'
+import WC from './Components/WC.jsx'
+import Wchild from './Components/Wchild.jsx'
+import Women from './Components/Women.jsx'
 import Men from './Components/Men.jsx'
 import Detail from './Components/Detail.jsx'
 import Shoes from './Components/Shoes.jsx'
@@ -20,8 +25,32 @@ const router = createBrowserRouter([
     element:<Men />
   },
   {
+    path:'/Women',
+    element:<Women />
+  },
+  {
+    path:'/Kid',
+    element:<Kid />
+  },
+  {
     path:'/Men/Shoes',
     element:<Shoes  />
+  },
+  {
+    path:'/Kid/Shoes',
+    element:<Shoes  />
+  },
+  {
+    path:'/Women/Shoes',
+    element:<Shoes  />
+  },
+  {
+    path:'/Women/Gear',
+    element:<Gear  />
+  },
+  {
+    path:'/Kid/Gear',
+    element:<Gear  />
   },
   {
     path:'/Shoes/Detail/:id',
@@ -30,6 +59,18 @@ const router = createBrowserRouter([
   {
     path:'Men/clothing/',
     element:<Clothing  />
+  },
+  {
+    path:'Women/clothing/',
+    element:<WC  />
+  },
+  {
+    path:'Kid/clothing/',
+    element:<KC  />
+  },
+  {
+    path:'/clothing/:id',
+    element:<Wchild  />
   },
   {
     path:'/clothing/Detail/:id',

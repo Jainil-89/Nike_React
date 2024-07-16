@@ -88,9 +88,8 @@ function App() {
         <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-5 pt-6 text-white cursor-pointer"></i>
         <ul className='text-xl text-white mt-24 p-10 sm:text-xl'>
           <li className='p-8'><Link to="/Men">Men</Link></li>
-          <li className='p-8 pl-3'><a href="">Women</a></li>
-          <li className='p-8'><a href="">Kids</a></li>
-          <li className='p-8'><a href="">Sale</a></li>
+          <li className='p-8 pl-3'><Link href="/Women">Women</Link></li>
+          <li className='p-8'><Link to="/Kid">Kids</Link></li>
           <li className='p-8'><a href=""><i class="fa-solid fa-cart-shopping cursor-pointer"></i></a></li>
           <li className='p-8 pl-10'><a href=""><i class="fa-solid fa-user cursor-pointer"></i></a></li>
 
@@ -102,10 +101,9 @@ function App() {
         <nav className='w-full h-20 flex justify-evenly bg-zinc-900 text-white'>
           <img className='w-24 h-auto mr-16 fill-white-900' src="/nike(1).png" alt="" />
           <ul className='nv h-auto flex max-[890px]:hidden'>
-            <li className='m-6 text-lg'><a href="/Men">Men</a></li>
-            <li className='m-6 text-lg'><a href="">Women</a></li>
-            <li className='m-6 text-lg'><a href="">Kids</a></li>
-            <li className='m-6 text-lg'><a href="">Sale</a></li>
+            <li className='m-6 text-lg'><Link to="/Men">Men</Link></li>
+            <li className='m-6 text-lg'><Link to="/Women">Women</Link></li>
+            <li className='m-6 text-lg'><Link to="/Kid">Kids</Link></li>
           </ul>
 
           <ul className='icn flex '>
@@ -160,7 +158,7 @@ function App() {
 
           </div>
           <div className='flex justify-center'>
-            <a href="/Men"><button className='w-48 h-14 text-white rounded-xl text-xl bg-zinc-800 mb-10 mt-20 hover:text-white hover:bg-black hover:ease-out duration-300'>Explore More</button></a>
+            <Link to="/Men"><button className='w-48 h-14 text-white rounded-xl text-xl bg-zinc-800 mb-10 mt-20 hover:text-white hover:bg-black hover:ease-out duration-300'>Explore More</button></Link>
           </div>
 
         </body>

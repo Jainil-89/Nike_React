@@ -6,7 +6,7 @@ import ProductList from "../Products/ProductList"
 import { useGSAP } from "@gsap/react";
 import '../Shoes.css'
 import { Footer } from "../Footer";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 
 function Shoes(){
