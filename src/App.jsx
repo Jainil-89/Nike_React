@@ -98,7 +98,7 @@ function App() {
 
       <div>
 
-        <nav className='w-full h-20 flex justify-evenly bg-zinc-900 text-white'>
+        <nav className='w-full h-20 flex justify-evenly text-white'>
           <img className='w-24 h-auto mr-16 fill-white-900' src="/nike(1).png" alt="" />
           <ul className='nv h-auto flex max-[890px]:hidden'>
             <li className='m-6 text-lg'><Link to="/Men">Men</Link></li>

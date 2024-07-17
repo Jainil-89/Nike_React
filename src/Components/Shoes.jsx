@@ -16,7 +16,7 @@ function Shoes(){
     return(
         <>
             <Cnav />
-            <div className="box mt-2 shadow-xl overflow-hidden w-full h-auto justify-evenly flex flex-wrap">
+            <div className="box mt-36 shadow-xl overflow-hidden w-full h-auto justify-evenly flex flex-wrap">
                 
                 {ProductList.map((x)=>{
                     return(

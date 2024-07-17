@@ -16,7 +16,7 @@ function Clothing(){
         <>
             <Cnav />
 
-            <div className="box overflow-hidden mt-20 w-full h-auto justify-evenly flex flex-wrap">
+            <div className="box overflow-hidden mt-36 w-full h-auto justify-evenly flex flex-wrap">
                 
                 {Cloth.map((x)=>{
                     if(x.id < 25)

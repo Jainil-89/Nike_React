@@ -4,6 +4,14 @@
 }
 body{
     background-color: #18181B;
+    background-image: url("/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    /* background-color: #465A95; */
+    background-color:transparent;
 }
 .box h1{
     font-family: 'oswald';
@@ -49,6 +57,12 @@ body{
         font-size: 40px;
         margin-top: -30%;
 
+    }
+    body{
+        background-image:url("/bgm.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .box img{
         margin-left: -14%;
