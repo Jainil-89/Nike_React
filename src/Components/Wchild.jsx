@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import wcl from "../Products/wcl";
 import { useParams } from "react-router-dom";
-import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 import { Footer } from "../Footer";
 
 
@@ -59,7 +59,7 @@ function Wchild(){
                     <button className="hover:bg-white duraction-500 hover:scale-100 duraction-200 hover:text-black focus:bg-white duration-700 focus:text-black max-[431px]:w-20 max-[431px]:h-8 border-solid border-2 outline-none w-32 m-2 h-12 outline-double">2XL</button>
                     </div>
                     <div className="flex mt-14 text-2xl text-white font-bold justify-center">
-                        <button className="borfer-solid border-2 hover:border-black outline-none rounded-md w-48 h-12 hover:bg-orange-400 hover:text-black duration-300 max-[431px]:w-28 max-[431px]:text-sm max-[431px]:h-10 hover:font-normal">Add To Bag</button>
+                       <Link to={`/clothing/cart/${x.id}`}> <button className="borfer-solid border-2 hover:border-black outline-none rounded-md w-48 h-12 hover:bg-orange-400 hover:text-black duration-300 max-[431px]:w-28 max-[431px]:text-sm max-[431px]:h-10 hover:font-normal">Add To Bag</button></Link>
                     </div>
                 </div>
             </div>

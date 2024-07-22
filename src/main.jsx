@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import Scart from './Components/Scart.jsx'
+import D3 from './Components/3D.jsx'
 import KC from './Components/KC.jsx'
 import Kid from './Components/Kid.jsx'
 import WC from './Components/WC.jsx'
@@ -14,6 +16,7 @@ import Gear from './Components/Gear.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Clothing from './Components/Clothing.jsx'
 import ClothingDetail from './Components/ClothingDetail.jsx'
+import Ccart from './Components/Ccart.jsx'
 
 const router = createBrowserRouter([
   {
@@ -57,6 +60,14 @@ const router = createBrowserRouter([
     element:<Detail  />
   },
   {
+    path:'/Detail/cart/:id',
+    element:<Scart  />
+  },
+  {
+    path:'/clothing/cart/:id',
+    element:<Ccart  />
+  },
+  {
     path:'Men/clothing/',
     element:<Clothing  />
   },
@@ -83,6 +94,10 @@ const router = createBrowserRouter([
   {
     path:'/Gear/Detail/:id',
     element:<ClothingDetail  />
+  },
+  {
+    path:'/Clothingdetail/D3/:id',
+    element:<D3  />
   },
   
 ])

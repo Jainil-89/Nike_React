@@ -88,7 +88,7 @@ function App() {
         <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-5 pt-6 text-white cursor-pointer"></i>
         <ul className='text-xl text-white mt-24 p-10 sm:text-xl'>
           <li className='p-8'><Link to="/Men">Men</Link></li>
-          <li className='p-8 pl-3'><Link href="/Women">Women</Link></li>
+          <li className='p-8 pl-3'><Link to="/Women">Women</Link></li>
           <li className='p-8'><Link to="/Kid">Kids</Link></li>
           <li className='p-8'><a href=""><i class="fa-solid fa-cart-shopping cursor-pointer"></i></a></li>
           <li className='p-8 pl-10'><a href=""><i class="fa-solid fa-user cursor-pointer"></i></a></li>

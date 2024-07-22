@@ -16,7 +16,7 @@ export function Footer() {
 
                     <div className='men text-white'>
                         <ul className='text-center'>
-                            <h1 className='text-xl p-3 font-semibold'><li><a href="/Men">Men</a></li></h1>
+                            <h1 className='text-xl p-3 font-semibold'><li><Link to="/Men">Men</Link></li></h1>
                             <li className='p-2'><Link to="/Men/Shoes">Shoes</Link></li>
                             <li className='p-2'><Link to="/Men/clothing">Clothing</Link></li>
                             <li className='p-2'><Link to="/Men/Gear">Gears</Link></li>
@@ -26,7 +26,7 @@ export function Footer() {
                     <div className='women text-white'>
                         <ul className='text-center'>
                             <h1 className='text-xl p-3 font-semibold'><li><Link to="/Women">Women</Link></li></h1>
-                            <li className='p-2'><Link to="">Shoes</Link></li>
+                            <li className='p-2'><Link to="/Women/Shoes">Shoes</Link></li>
                             <li className='p-2'><Link to="/Women/clothing">Clothing</Link></li>
                             <li className='p-2'><Link to="/Women/Gear">Gears</Link></li>
                         </ul>
