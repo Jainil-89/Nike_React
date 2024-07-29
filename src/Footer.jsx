@@ -51,10 +51,10 @@ export function Footer() {
                     <h1 className='text-white text-center text-2xl'>Support</h1>
                     <div className='flex justify-center'>
                         <ul className='flex mt-5'>
-                            <li className='w-12 h-12'><a href="https://www.instagram.com/jainil__borisagar/?igsh=MW00d2I2cWMzOW1teQ%3D%3D"><img src="/instagram.png" alt="" /></a></li>
-                            <li className='w-12 h-12'><a href="https://in.linkedin.com/in/jainil-borisagar-72a2a4242"><img src="/linkedin.png" alt="" /></a></li>
-                            <li className='w-11 mt-1 pl-1 h-11'><a href="https://x.com/Jainil089?t=Zawm-_ClFZvVRBQiPIBXhw&s=09&mx=2"><img src="/twitter.png" alt="" /></a></li>
-                            <li className='w-12 h-12'><a href="https://github.com/Jainil-89"><img src="/github.png" alt="" /></a></li>
+                            <li className='w-12 h-12'><a href="https://www.instagram.com/jainil__borisagar/?igsh=MW00d2I2cWMzOW1teQ%3D%3D" target='_blank'><img src="/instagram.png" alt="" /></a></li>
+                            <li className='w-12 h-12'><a href="https://in.linkedin.com/in/jainil-borisagar-72a2a4242" target='_blank'><img src="/linkedin.png" alt="" /></a></li>
+                            <li className='w-11 mt-1 pl-1 h-11'><a href="https://x.com/Jainil089?t=Zawm-_ClFZvVRBQiPIBXhw&s=09&mx=2" target='_blank'><img src="/twitter.png" alt="" /></a></li>
+                            <li className='w-12 h-12'><a href="https://github.com/Jainil-89" target='_blank'><img src="/github.png" alt="" /></a></li>
                         </ul>
                         
                     </div>

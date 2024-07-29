@@ -1,0 +1,12 @@
+
+.loader {
+    width: 224px;
+    height: 3px;
+    background:
+     linear-gradient(#01b901 0 0) 0/0% no-repeat
+     #000;
+    animation: l1 3s linear;
+  }
+  @keyframes l1 {
+      100% {background-size:100%}
+  }

@@ -1,4 +1,4 @@
-import { useGSAP } from "@gsap/react"
+import { Link } from "react-router-dom"
 import { useState } from "react"
 
 
@@ -57,7 +57,7 @@ function Mrp(){
             <h1 className="text-2xl pl-9">Men's Shoes -  ₹ 9899</h1>
             <div className="clr w-8 h-8 rounded-full bg-blue-500 cursor-pointer border-solid border-2 border-white hover:scale-110 mt-10 ml-48"></div>
             <button onClick={dec} className="btn1 opacity-0">-</button>
-            <button onClick={ct} className="crt text-lg w-48 m-9 ease-out duration-700 h-10 bg-gray-500 cursor-pointer hover:bg-orange-700 hover:rounded-md">Add to Cart</button>
+            <Link to="/Men/Shoes"><button onClick={ct} className="crt text-lg w-48 m-9 ease-out duration-700 h-10 bg-gray-500 cursor-pointer hover:bg-orange-700 hover:rounded-md">Add to Cart</button></Link>
             <button onClick={inc} className="btn2 opacity-0">+</button>
           </div>
         </>

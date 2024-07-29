@@ -3,13 +3,24 @@ import Cnav from "../cnav"
 import { Link } from "react-router-dom"
 import { useGSAP } from "@gsap/react"
 import gsap from 'gsap';
-import Shoes from "./Shoes";
+import { useEffect } from "react";
 import { Footer } from "../Footer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Kid() {
+
+    
+function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
+    return null;
+  }
+  
+  ScrollToTopOnMount();
 
     useGSAP(()=>{
         gsap.from(".rj",{

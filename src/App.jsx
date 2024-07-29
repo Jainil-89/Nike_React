@@ -20,12 +20,26 @@ function App() {
 
   function nb() {
     const n = document.querySelector(".n")
+    const aa = document.querySelector(".aa")
+    const foot = document.querySelector("footer")
+
     n.style.display = "flex"
+    body.style.overflow = "hidden"
+    n.style.position = "fixed"
+    aa.style.display = "none"
+    foot.style.display = "none"
+      
   }
 
   function rm() {
     const n = document.querySelector(".n")
+    const aa = document.querySelector(".aa")
+    const foot = document.querySelector("footer")
+
     n.style.display = "none";
+    aa.style.display = "block";
+    foot.style.display = "block";
+
   }
 
 
@@ -84,42 +98,42 @@ function App() {
   return (
     <>
 
-      <div className="n flex justify-center w-full fixed bg-zinc-950 absolute z-50 hidden">
+      <div className="n flex justify-center mt-0 w-full fixed bg-black absolute z-50 hidden">
         <i onClick={rm} className="crs fa-solid fa-xmark absolute text-4xl right-5 pt-6 text-white cursor-pointer"></i>
-        <ul className='text-xl text-white mt-24 p-10 sm:text-xl'>
+        <ul className='text-xl text-white mt-16 p-10 sm:text-xl'>
           <li className='p-8'><Link to="/Men">Men</Link></li>
           <li className='p-8 pl-3'><Link to="/Women">Women</Link></li>
           <li className='p-8'><Link to="/Kid">Kids</Link></li>
-          <li className='p-8'><a href=""><i class="fa-solid fa-cart-shopping cursor-pointer"></i></a></li>
-          <li className='p-8 pl-10'><a href=""><i class="fa-solid fa-user cursor-pointer"></i></a></li>
+          <li className='p-8'><Link to="/Cart"><i class="fa-solid fa-cart-shopping cursor-pointer"></i></Link></li>
+          <li className='p-8 pl-10'><Link to="/Login"><i class="fa-solid fa-user cursor-pointer"></i></Link></li>
 
         </ul>
       </div>
 
-      <div>
+      <div className='aa'>
 
-        <nav className='w-full h-20 flex justify-evenly text-white'>
+        <nav className='nv w-full h-20 flex justify-evenly text-white'>
           <img className='w-24 h-auto mr-16 fill-white-900' src="/nike(1).png" alt="" />
           <ul className='nv h-auto flex max-[890px]:hidden'>
-            <li className='m-6 text-lg'><Link to="/Men">Men</Link></li>
+            <li className='m-6 text-lg'><Link to="/Men" >Men</Link></li>
             <li className='m-6 text-lg'><Link to="/Women">Women</Link></li>
             <li className='m-6 text-lg'><Link to="/Kid">Kids</Link></li>
           </ul>
 
           <ul className='icn flex '>
 
-            <i class="fa-solid fa-cart-shopping mt-7 ml-9 h-auto pl-20 cursor-pointer"></i>
-            <i class="fa-solid fa-user cursor-pointer mt-7 pl-10 "></i>
+            <Link to="/Cart"><i class="fa-solid fa-cart-shopping mt-7 ml-9 h-auto pl-20 cursor-pointer"></i></Link>
+            <Link to="/Login"><i class="fa-solid fa-user cursor-pointer mt-7 pl-10 "></i></Link>
           </ul>
           <i onClick={nb} id="bar" className="fa-solid fa-bars-staggered mt-7 cursor-pointer text-2xl "></i>
         </nav>
 
-        <body className='bg-zinc-900 overflow-hidden w-full h-full'>
+        <body className='bd bg-zinc-900 overflow-hidden w-full h-full'>
 
 
-          <div className="srch flex justify-center">
+          {/* <div className="srch flex justify-center">
             <input className='bg-zinc-800 outline-none px-7 h-9 rounded-md text-white w-72' type="text" name="" id="" placeholder='Search...' />
-          </div>
+          </div> */}
 
 
 
@@ -133,7 +147,7 @@ function App() {
               </h1>
             </div>
 
-            <img className='shu w-90 h-56 mt-40 ml-20 -rotate-45  md:w-90 md:h-56' src="/air.png" alt="" />
+            <img className='shu drop-shadow-2xl w-90 h-56 mt-40 ml-20 -rotate-45  md:w-90 md:h-56' src="/air.png" alt="" />
 
 
             <Mrp />

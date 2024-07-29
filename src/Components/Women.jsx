@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Cnav from "../cnav"
 import { Link } from "react-router-dom"
 import { useGSAP } from "@gsap/react"
@@ -47,6 +47,16 @@ function Women() {
             duration: 0.3
         })
     })
+
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+      }
+      
+      ScrollToTopOnMount()
 
 
     return (

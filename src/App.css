@@ -4,7 +4,7 @@
 }
 body{
     background-color: #18181B;
-    background-image: url("/bg.jpg");
+    background-image: url("/bg3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -59,10 +59,10 @@ nav{
 
     }
     body{
-        background-image:url("/bgm.jpg");
+        /* background-image:url("/peakpx.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed; */
     }
     .box img{
         margin-left: -14%;

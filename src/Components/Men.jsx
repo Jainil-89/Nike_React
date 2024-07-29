@@ -6,10 +6,22 @@ import gsap from 'gsap';
 import Shoes from "./Shoes";
 import { Footer } from "../Footer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Men() {
+
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
+ScrollToTopOnMount()
 
     useGSAP(()=>{
         gsap.from(".rj",{
